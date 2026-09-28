@@ -348,6 +348,253 @@ select {
   color: #475569;
 }
 
+/* Celebration banner */
+.celebration-banner {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-radius: 16px;
+  padding: 22px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.25);
+  animation: celebratePop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+}
+
+@keyframes celebratePop {
+  0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.celebration-title {
+  color: #92400e;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.celebration-title i {
+  color: #d97706;
+}
+
+.celebration-message {
+  color: #78350f;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.winning-team-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #fcd34d;
+  border-radius: 9999px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0071c5;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.winning-team-highlight i {
+  color: #f59e0b;
+}
+
+/* Attendee List Section */
+.attendee-list-section {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 2px solid #f1f5f9;
+  text-align: left;
+}
+
+.attendee-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.attendee-list-header h3 {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.attendee-list-header h3 i {
+  color: #0071c5;
+}
+
+.attendee-list-badge {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.attendee-empty {
+  text-align: center;
+  padding: 30px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px dashed #cbd5e1;
+}
+
+.attendee-empty i {
+  font-size: 26px;
+  margin-bottom: 8px;
+  display: block;
+  color: #cbd5e1;
+}
+
+.attendee-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 2px 4px 2px 0;
+}
+
+.attendee-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.attendee-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.attendee-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.attendee-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0071c5;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.attendee-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attendee-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.attendee-team-pill {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.attendee-team-pill.water {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.attendee-team-pill.zero {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.attendee-team-pill.power {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.attendee-time {
+  font-size: 12px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+/* Reset section */
+.reset-section {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.reset-button {
+  background: transparent;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.reset-button:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+  transform: none;
+  box-shadow: none;
+}
+
+.reset-button i {
+  font-size: 12px;
+  margin-right: 0;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
